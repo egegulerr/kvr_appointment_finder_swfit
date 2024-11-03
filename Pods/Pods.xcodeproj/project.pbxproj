@@ -1,0 +1,1330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000002FCB2A8B864EC30844FF75CA795 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52842DFF5B38CD936E090916D163B370 /* StringUtil.swift */; };
+		035E214514B5FEB96818581B72CCB7CB /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786656DD5823D845776D10940F4588F1 /* Token.swift */; };
+		071EBD610F329CFBABC9EAFABB4C8F69 /* HtmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEFB483E9E0442BE227A1FF99FD16B /* HtmlTreeBuilder.swift */; };
+		0D3C5C668244A45BCD98E8BE9A17E862 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F06C6505DF80E61B377B6A3D446F3D /* Node.swift */; };
+		1010680B1092C0010ADD84DFFA0CA4AF /* SerializationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782CD6E32754D17A959BF1EB53A99C9E /* SerializationException.swift */; };
+		156A5C1D40E32103B7D8D3073E0DEE6D /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1515C4DFB41220A9C867FFA019173 /* Attribute.swift */; };
+		176FC704EE93071B49173DC6274581CB /* SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F501F6E481457B62F2C7F48CD19A /* SwiftSoup.swift */; };
+		179FE5D62F33E9C6B29412E9EC0F87EB /* NodeTraversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BF17B11C8ABEB18E44A6D69DA71897 /* NodeTraversor.swift */; };
+		1E88CBDC2BF8F2D3D44913A0BB5C1776 /* SwiftSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B68BF090A4702B2F197CA5983995DA89 /* SwiftSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EBD07B344F4C00693D5C4FE69F8626D /* CharacterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD5E42C32DD8D0E52BE418816DE1FD /* CharacterExt.swift */; };
+		29269383F072E1DEC9E2825639E79AA1 /* CssSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C5E5E3168BCC672840381CBD9C690 /* CssSelector.swift */; };
+		2BBDF53DC5469F75FCF14729DBAA6CD1 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFFE57DDC1EF61B1280B22295755916 /* Exception.swift */; };
+		2E558081336A19D24CF9EF9FAB530693 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CBC8049357B25DC48FEB868B09CC9 /* TextNode.swift */; };
+		315EB177FD995A4678F0CF9081740621 /* NodeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08616EE583E36C2A070E003AB8A6C89 /* NodeVisitor.swift */; };
+		32B9C269AF72D4744FAC59B98FEFCAAB /* HttpStatusException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9558127332033C32E71B015B08C37E7C /* HttpStatusException.swift */; };
+		33DCF4CD0BC4EF2C7CF9D415163383DC /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A4E71D6DBD22256FC45C0EADCB102 /* QueryParser.swift */; };
+		354BE30B27FB9A6BE7E1F9BC990399A0 /* Pods-AppointmentFinderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DC513082CFAF6A19ED5EA741E532FB /* Pods-AppointmentFinderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9B6A5F058BBA57C42C78B3A220D4B9 /* TreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F81D500F969A3A3CC3045793A995C /* TreeBuilder.swift */; };
+		41BBF459C17C36F75D0C180A50A6DE4D /* Pods-AppointmentFinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C6F13626752CB17ADA9D3F0600B9F /* Pods-AppointmentFinderTests-dummy.m */; };
+		46812694043186C87EFBFF3C7EA771FE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E088DDE075294576790542967D5092 /* Document.swift */; };
+		47455C1526428B4FAAE12221A3C9C550 /* SimpleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D3261619347FA17517E2364917871 /* SimpleDictionary.swift */; };
+		498829D9E5367D129E2C8F2A1C14E159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		49DCB48E5341AAB447D2BE7B9EA66678 /* DataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AFD1DDA7422E8C3A59A72218ECCE1 /* DataNode.swift */; };
+		55F162EAA96FFA143BF089F7DC5AC8C9 /* StructuralEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CCB4F1A3257E6EA3C7E4F21E24F31 /* StructuralEvaluator.swift */; };
+		5813E5D4937EF4E699F6949123CE96EC /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8565CA04E00B65067FBADB4B33F1EAA /* OrderedSet.swift */; };
+		5A5ADE0B649BF53670D96359D661EFD5 /* SwiftSoup-SwiftSoup in Resources */ = {isa = PBXBuildFile; fileRef = 7977795532771BCD15FDC7F92DBBBCB6 /* SwiftSoup-SwiftSoup */; };
+		5A78A3B41086AD0AFC57A12E9A54B7E6 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57CA051E66888BB1971981CDCDB499 /* Attributes.swift */; };
+		5BBA772BFCC83433AADCE1F17754A862 /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA93731FD628C99375D8D2DC1CABC77 /* SwiftSoup-dummy.m */; };
+		5C52411C02C57FFA8CCD549630CAB80D /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52FF2CD3CEB5086C797A3EB144270D /* StreamReader.swift */; };
+		5CA9DB1FCFD443B5F54AA8E926191770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		5CCAAB7F83FC7451A168FC013A51DDE2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B78D191A8416FEECA8644346AE076 /* String.swift */; };
+		5F388DA04D60A26F0A557CA78D3F294B /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD3D2BA3A0236472FDAB2220B79384 /* Validate.swift */; };
+		5F8FC8254A0EF62B89121BC7365E0DFB /* Tokeniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225560D84D6EDB1822F35B269B043F77 /* Tokeniser.swift */; };
+		6212964EF5E0C7210E3E58FCC37BAE7C /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DB14AFAF7CA1951553862D2E7E8FA4 /* ParseError.swift */; };
+		6968E8FAEE10467201A4CAC774238624 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480A6B8C97E1CC9DDB009B942E46AD80 /* Elements.swift */; };
+		69C52F60E1D79B8FC9002C8F355C763F /* Pods-AppointmentFinder-AppointmentFinderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E77F613D6EDC5711B92812F8ACA22 /* Pods-AppointmentFinder-AppointmentFinderUITests-dummy.m */; };
+		6FF7395D5620233161867B47A850289D /* CombiningEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E9ACAB91CE3DACBD39193730B83E1 /* CombiningEvaluator.swift */; };
+		72B6A592D0381AC7DC9E1CD368DC90AD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 67C5E6E55BC655EC4B424AEECCE5E99B /* PrivacyInfo.xcprivacy */; };
+		758EAF35600B7220CC1EC79CB1158F93 /* TokeniserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF8771F98582E35060F4228FC3A904 /* TokeniserState.swift */; };
+		79C85C520C32F9B61945DF6C05D74769 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BB6A0CCC8AE526AAD7B636E9346D1 /* StringBuilder.swift */; };
+		82A3BA9652912CCDE50D46517F3E47CD /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A71B746BE725C7604E65F1BA0F0141 /* ArrayExt.swift */; };
+		8601B7FCA1B656E9109128AC000D3ACE /* ParseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB366D40AC0B25D6B1771726D12936 /* ParseSettings.swift */; };
+		8A8732C28FE641A6F96EB029CCD3C8A2 /* XmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D7C45EFA29748426CC8E57AECD54A /* XmlTreeBuilder.swift */; };
+		8EFB354312A09E2F8FC22E020E3BD709 /* ParseErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AED72B585461E3257C4438AA118C9 /* ParseErrorList.swift */; };
+		9130B945402F50A32AED1018A00C5800 /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD18C297AE335D0001AFD169E66332 /* DocumentType.swift */; };
+		99A3D75920414E3919B202FF673CD343 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2748E53D97C485A071019AC85AB6D5 /* Pattern.swift */; };
+		99B03FD19899E40C636D8443F0D4F45F /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01A434C651E53CE886080EEC6A04EB /* Element.swift */; };
+		9E079A84091893C954D87CC973195A3E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0186D282EF365FC8796F5CDDF3A73027 /* Tag.swift */; };
+		A0BEFB9777A6FEA2955F6C32FAD908EA /* FormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3319234D667DF1C099A8A55EDAB01A /* FormElement.swift */; };
+		A20559697E9AA54245FA0E47116744AD /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257500C2F101EBB103054B6F22B3BE6 /* DataUtil.swift */; };
+		A3675DDFDB2F343334CCDA27FA0A32A1 /* TokenQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC610BBDA805620F809203DC7EFD1D6 /* TokenQueue.swift */; };
+		A4C6E03ABDC7582013716D64AF6E6619 /* Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BF3CC3BC0A0137A0893AD39309A0A /* Whitelist.swift */; };
+		A4F6B7794D113D69E49F75EF2B094336 /* CharacterReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F272E2E22A9D4BAB1609DC58712B4E8 /* CharacterReader.swift */; };
+		B59556AFE2EA38205BF08919B1AAD350 /* BooleanAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C47E5CA6852E27DFFBAC7C1577B01 /* BooleanAttribute.swift */; };
+		B628B05F7721E33235406133AC4C16E7 /* HtmlTreeBuilderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F9353BE7C2162D189600ED14FB345 /* HtmlTreeBuilderState.swift */; };
+		B816482347F8F2D336F778550C88AF7F /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52127C4C703CF5C68D5B2FB53BBB49C /* Evaluator.swift */; };
+		B8CBD6596553E0D6D23F44A8AD6FEBAA /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A325F6783C055E752BDF9FFBFEE51666 /* UnfairLock.swift */; };
+		C3F46385B7746B23E11AB29E45360827 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		C660E4DA75933E2733BEF06E3B09A0C9 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F010F91C94BF35969338629088DF8 /* BinarySearch.swift */; };
+		CD64D9D80428674E76E4B612184FB148 /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5EF99618173663FA054FC3BBD55CD /* Cleaner.swift */; };
+		D92A1AF665187987A85B411D790949AA /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EBB0478220DDB151A370BD89351BD2 /* Parser.swift */; };
+		DBAC6C78F4705141D9651B92557DF4FF /* XmlDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E45FB00B83843071ED873C235F456 /* XmlDeclaration.swift */; };
+		DDB37D38F7F42E22916989D2543D026F /* Pods-AppointmentFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8552FDF7882CEE1ACFC50E47B4443FBA /* Pods-AppointmentFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1ECA653A787DFA91EC4C1B856909C81 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B45C1731C37FCE8219C8549C762FC /* Comment.swift */; };
+		E4F437019D66767F61D9A402054F3FC4 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18490F8BE9C3A83EA5F421D566DAE9E /* Collector.swift */; };
+		E9F36A5F406777302B190B59D54C37B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		EF0A6B2BA28B537890E5921B05316EF5 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7B54E2207C3075DDA5B442D29D1E2 /* Entities.swift */; };
+		EF21A4958A1F2968E76981AFE9CF2CD7 /* Pods-AppointmentFinder-AppointmentFinderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 668F6A4FCA0541015C1D72D0EAB08F02 /* Pods-AppointmentFinder-AppointmentFinderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF6C6B6B4F60D15C843C41FD75B835B7 /* UnicodeScalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83A5DBDEE46138B83FFA61005CA4A39 /* UnicodeScalar.swift */; };
+		F911DC8D32D8081809DE861CDCF8545A /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABEF92D8AE79C26D0B45A2C8A68BDF /* Connection.swift */; };
+		F98B03615C015CA31039F8611AC4786E /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD3A4CB6F290CE231D46A1EF74DC3E /* Mutex.swift */; };
+		FF5C9CC10423050A2B82981756FB99F6 /* Pods-AppointmentFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0082C810F169D0253B151D8E3290BC /* Pods-AppointmentFinder-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A15D445656FE6962FD4D5926C687CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89F48405DFAFEF441B4E758A15117A5;
+			remoteInfo = SwiftSoup;
+		};
+		6D95CE7322E5F15B66B427EB252440DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89F48405DFAFEF441B4E758A15117A5;
+			remoteInfo = SwiftSoup;
+		};
+		8624490BC154042DCF6C388AA98FA457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2713795054EA26FF73DB81D0E8B480AA;
+			remoteInfo = "SwiftSoup-SwiftSoup";
+		};
+		9BF037EC2620AFEF3FDC269119849160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82E15A8D015657F374818E7134C0C8F1;
+			remoteInfo = "Pods-AppointmentFinder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0186D282EF365FC8796F5CDDF3A73027 /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
+		028D3261619347FA17517E2364917871 /* SimpleDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDictionary.swift; path = Sources/SimpleDictionary.swift; sourceTree = "<group>"; };
+		02ABEF92D8AE79C26D0B45A2C8A68BDF /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Connection.swift; sourceTree = "<group>"; };
+		08A1F24F37F6ED97645DA7EFE896D00D /* Pods-AppointmentFinder-AppointmentFinderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppointmentFinder-AppointmentFinderUITests.modulemap"; sourceTree = "<group>"; };
+		0CA5EF99618173663FA054FC3BBD55CD /* Cleaner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cleaner.swift; path = Sources/Cleaner.swift; sourceTree = "<group>"; };
+		14C7B54E2207C3075DDA5B442D29D1E2 /* Entities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = Sources/Entities.swift; sourceTree = "<group>"; };
+		18847F410958B6C749726BCE98F2C84F /* Pods-AppointmentFinder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppointmentFinder-acknowledgements.plist"; sourceTree = "<group>"; };
+		195290A6CE84EBE38E08AAD67A5420E1 /* Pods-AppointmentFinder-AppointmentFinderUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppointmentFinder-AppointmentFinderUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1DCD5E42C32DD8D0E52BE418816DE1FD /* CharacterExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExt.swift; path = Sources/CharacterExt.swift; sourceTree = "<group>"; };
+		225560D84D6EDB1822F35B269B043F77 /* Tokeniser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokeniser.swift; path = Sources/Tokeniser.swift; sourceTree = "<group>"; };
+		25E69725DA6C03AF0AA69513FF884260 /* ResourceBundle-SwiftSoup-SwiftSoup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftSoup-SwiftSoup-Info.plist"; sourceTree = "<group>"; };
+		274F9353BE7C2162D189600ED14FB345 /* HtmlTreeBuilderState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilderState.swift; path = Sources/HtmlTreeBuilderState.swift; sourceTree = "<group>"; };
+		28DC513082CFAF6A19ED5EA741E532FB /* Pods-AppointmentFinderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppointmentFinderTests-umbrella.h"; sourceTree = "<group>"; };
+		299F010F91C94BF35969338629088DF8 /* BinarySearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinarySearch.swift; path = Sources/BinarySearch.swift; sourceTree = "<group>"; };
+		2D8AFD1DDA7422E8C3A59A72218ECCE1 /* DataNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataNode.swift; path = Sources/DataNode.swift; sourceTree = "<group>"; };
+		2DFF8771F98582E35060F4228FC3A904 /* TokeniserState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokeniserState.swift; path = Sources/TokeniserState.swift; sourceTree = "<group>"; };
+		330C47E5CA6852E27DFFBAC7C1577B01 /* BooleanAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanAttribute.swift; path = Sources/BooleanAttribute.swift; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		414E77F613D6EDC5711B92812F8ACA22 /* Pods-AppointmentFinder-AppointmentFinderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppointmentFinder-AppointmentFinderUITests-dummy.m"; sourceTree = "<group>"; };
+		4257500C2F101EBB103054B6F22B3BE6 /* DataUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = Sources/DataUtil.swift; sourceTree = "<group>"; };
+		452F50E039790064C1D4234604FB91E4 /* Pods-AppointmentFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppointmentFinder.release.xcconfig"; sourceTree = "<group>"; };
+		480A6B8C97E1CC9DDB009B942E46AD80 /* Elements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elements.swift; path = Sources/Elements.swift; sourceTree = "<group>"; };
+		4D660463EAF613D25753C1258F8FBA5C /* SwiftSoup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.debug.xcconfig; sourceTree = "<group>"; };
+		4E13DB96AEBB068683D1C590FB75684F /* Pods-AppointmentFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppointmentFinder.modulemap"; sourceTree = "<group>"; };
+		52842DFF5B38CD936E090916D163B370 /* StringUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Sources/StringUtil.swift; sourceTree = "<group>"; };
+		535E9ACAB91CE3DACBD39193730B83E1 /* CombiningEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombiningEvaluator.swift; path = Sources/CombiningEvaluator.swift; sourceTree = "<group>"; };
+		541AED72B585461E3257C4438AA118C9 /* ParseErrorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseErrorList.swift; path = Sources/ParseErrorList.swift; sourceTree = "<group>"; };
+		59BF17B11C8ABEB18E44A6D69DA71897 /* NodeTraversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeTraversor.swift; path = Sources/NodeTraversor.swift; sourceTree = "<group>"; };
+		5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSoup; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BD3D2BA3A0236472FDAB2220B79384 /* Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validate.swift; path = Sources/Validate.swift; sourceTree = "<group>"; };
+		65B195524F08D69BA42232D305778841 /* Pods-AppointmentFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppointmentFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		668F6A4FCA0541015C1D72D0EAB08F02 /* Pods-AppointmentFinder-AppointmentFinderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppointmentFinder-AppointmentFinderUITests-umbrella.h"; sourceTree = "<group>"; };
+		67C5E6E55BC655EC4B424AEECCE5E99B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Sources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6AB5189104455B1F5A7D0A625F4A3008 /* SwiftSoup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.release.xcconfig; sourceTree = "<group>"; };
+		72B795A688A875AFC1DAD360F2F287E6 /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
+		73A71B746BE725C7604E65F1BA0F0141 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sources/ArrayExt.swift; sourceTree = "<group>"; };
+		782CD6E32754D17A959BF1EB53A99C9E /* SerializationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializationException.swift; path = Sources/SerializationException.swift; sourceTree = "<group>"; };
+		786656DD5823D845776D10940F4588F1 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Token.swift; sourceTree = "<group>"; };
+		793A4E71D6DBD22256FC45C0EADCB102 /* QueryParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParser.swift; path = Sources/QueryParser.swift; sourceTree = "<group>"; };
+		7977795532771BCD15FDC7F92DBBBCB6 /* SwiftSoup-SwiftSoup */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SwiftSoup-SwiftSoup"; path = SwiftSoup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4D1668C1E29847D1BD96ED73510E84 /* Pods-AppointmentFinder-AppointmentFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppointmentFinder-AppointmentFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F01A434C651E53CE886080EEC6A04EB /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		7F0BB6A0CCC8AE526AAD7B636E9346D1 /* StringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBuilder.swift; path = Sources/StringBuilder.swift; sourceTree = "<group>"; };
+		7F0F81D500F969A3A3CC3045793A995C /* TreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeBuilder.swift; path = Sources/TreeBuilder.swift; sourceTree = "<group>"; };
+		8415087ADEE9E2AA57956C6679489713 /* Pods-AppointmentFinderTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppointmentFinderTests-Info.plist"; sourceTree = "<group>"; };
+		8552FDF7882CEE1ACFC50E47B4443FBA /* Pods-AppointmentFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppointmentFinder-umbrella.h"; sourceTree = "<group>"; };
+		870B7965D363ACA17D4D835498B6FA4B /* Pods-AppointmentFinder-AppointmentFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppointmentFinder-AppointmentFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		87DB14AFAF7CA1951553862D2E7E8FA4 /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = Sources/ParseError.swift; sourceTree = "<group>"; };
+		89A73432F7AA2F8B48B91A404C34417E /* Pods-AppointmentFinderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppointmentFinderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B4032252B748EE7AC5FF23915B6C54D /* Pods-AppointmentFinder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppointmentFinder-Info.plist"; sourceTree = "<group>"; };
+		8D2748E53D97C485A071019AC85AB6D5 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		8E4E45FB00B83843071ED873C235F456 /* XmlDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlDeclaration.swift; path = Sources/XmlDeclaration.swift; sourceTree = "<group>"; };
+		8F272E2E22A9D4BAB1609DC58712B4E8 /* CharacterReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterReader.swift; path = Sources/CharacterReader.swift; sourceTree = "<group>"; };
+		91E8A2540A127FC5B731F5AC32A04EBB /* Pods-AppointmentFinder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppointmentFinder-frameworks.sh"; sourceTree = "<group>"; };
+		9558127332033C32E71B015B08C37E7C /* HttpStatusException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusException.swift; path = Sources/HttpStatusException.swift; sourceTree = "<group>"; };
+		95CD18C297AE335D0001AFD169E66332 /* DocumentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentType.swift; path = Sources/DocumentType.swift; sourceTree = "<group>"; };
+		9A9CBC8049357B25DC48FEB868B09CC9 /* TextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextNode.swift; path = Sources/TextNode.swift; sourceTree = "<group>"; };
+		9AC610BBDA805620F809203DC7EFD1D6 /* TokenQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenQueue.swift; path = Sources/TokenQueue.swift; sourceTree = "<group>"; };
+		9B2A5E3FBEFC8A6058574BC945FA33FF /* Pods-AppointmentFinder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppointmentFinder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A08616EE583E36C2A070E003AB8A6C89 /* NodeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeVisitor.swift; path = Sources/NodeVisitor.swift; sourceTree = "<group>"; };
+		A21B4DC53A971B495F72EC7ECBC7A883 /* Pods-AppointmentFinder-AppointmentFinderUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppointmentFinder-AppointmentFinderUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A325F6783C055E752BDF9FFBFEE51666 /* UnfairLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnfairLock.swift; path = Sources/UnfairLock.swift; sourceTree = "<group>"; };
+		A7FEFB483E9E0442BE227A1FF99FD16B /* HtmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilder.swift; path = Sources/HtmlTreeBuilder.swift; sourceTree = "<group>"; };
+		A920980DDDEC965EB553E88754037C0C /* Pods-AppointmentFinder-AppointmentFinderUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppointmentFinder-AppointmentFinderUITests-Info.plist"; sourceTree = "<group>"; };
+		AB0082C810F169D0253B151D8E3290BC /* Pods-AppointmentFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppointmentFinder-dummy.m"; sourceTree = "<group>"; };
+		AD3319234D667DF1C099A8A55EDAB01A /* FormElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormElement.swift; path = Sources/FormElement.swift; sourceTree = "<group>"; };
+		AEDD3A4CB6F290CE231D46A1EF74DC3E /* Mutex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutex.swift; path = Sources/Mutex.swift; sourceTree = "<group>"; };
+		AF6130F19095E63B93266297868D76D1 /* Pods-AppointmentFinder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppointmentFinder"; path = Pods_AppointmentFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CAF59C408F3A957BFD0C85D59B184E /* Pods-AppointmentFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppointmentFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1F06C6505DF80E61B377B6A3D446F3D /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
+		B2E088DDE075294576790542967D5092 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
+		B36C6F13626752CB17ADA9D3F0600B9F /* Pods-AppointmentFinderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppointmentFinderTests-dummy.m"; sourceTree = "<group>"; };
+		B52127C4C703CF5C68D5B2FB53BBB49C /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = "<group>"; };
+		B68BF090A4702B2F197CA5983995DA89 /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
+		B948A0B4E60AF7E670CD50D3F8F10D3C /* SwiftSoup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSoup-Info.plist"; sourceTree = "<group>"; };
+		B960D16F4A7F40FF69180F998534C0CB /* Pods-AppointmentFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppointmentFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		BAFFE57DDC1EF61B1280B22295755916 /* Exception.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = Sources/Exception.swift; sourceTree = "<group>"; };
+		BDA93731FD628C99375D8D2DC1CABC77 /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
+		C77BF3CC3BC0A0137A0893AD39309A0A /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Sources/Whitelist.swift; sourceTree = "<group>"; };
+		C79A565153D9788FEBC8C645E7B556F2 /* Pods-AppointmentFinderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppointmentFinderTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8565CA04E00B65067FBADB4B33F1EAA /* OrderedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedSet.swift; path = Sources/OrderedSet.swift; sourceTree = "<group>"; };
+		CA0C5E5E3168BCC672840381CBD9C690 /* CssSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CssSelector.swift; path = Sources/CssSelector.swift; sourceTree = "<group>"; };
+		CB4B45C1731C37FCE8219C8549C762FC /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Sources/Comment.swift; sourceTree = "<group>"; };
+		CC57CA051E66888BB1971981CDCDB499 /* Attributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
+		CD9D7C45EFA29748426CC8E57AECD54A /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlTreeBuilder.swift; path = Sources/XmlTreeBuilder.swift; sourceTree = "<group>"; };
+		CE7FB6EC46351855F55D9B3C5D35864E /* Pods-AppointmentFinder-AppointmentFinderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppointmentFinder-AppointmentFinderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DB7CCB4F1A3257E6EA3C7E4F21E24F31 /* StructuralEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructuralEvaluator.swift; path = Sources/StructuralEvaluator.swift; sourceTree = "<group>"; };
+		DF52FF2CD3CEB5086C797A3EB144270D /* StreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamReader.swift; path = Sources/StreamReader.swift; sourceTree = "<group>"; };
+		E1D292B54DE011082B477EE9B2EBE44F /* Pods-AppointmentFinderTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppointmentFinderTests"; path = Pods_AppointmentFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24A9CE6DD2AC0927B65A1FDA419AC45 /* Pods-AppointmentFinder-AppointmentFinderUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppointmentFinder-AppointmentFinderUITests"; path = Pods_AppointmentFinder_AppointmentFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37B78D191A8416FEECA8644346AE076 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/String.swift; sourceTree = "<group>"; };
+		E5CB366D40AC0B25D6B1771726D12936 /* ParseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseSettings.swift; path = Sources/ParseSettings.swift; sourceTree = "<group>"; };
+		F0EBB0478220DDB151A370BD89351BD2 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		F18490F8BE9C3A83EA5F421D566DAE9E /* Collector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
+		F1A1515C4DFB41220A9C867FFA019173 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
+		F614914A3652AFB62367F2D1235A2F48 /* Pods-AppointmentFinderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppointmentFinderTests.modulemap"; sourceTree = "<group>"; };
+		F83A5DBDEE46138B83FFA61005CA4A39 /* UnicodeScalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeScalar.swift; path = Sources/UnicodeScalar.swift; sourceTree = "<group>"; };
+		FD80AD135293FF19F384F002F084B9A7 /* SwiftSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSoup.modulemap; sourceTree = "<group>"; };
+		FFC5F501F6E481457B62F2C7F48CD19A /* SwiftSoup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSoup.swift; path = Sources/SwiftSoup.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EC33EC9121DC53B2105FD14BFFFEFF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C2B3D4314C1EC2D2855FA66D7A9A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA9DB1FCFD443B5F54AA8E926191770 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7526C313BE2DC217255C36684F3787DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498829D9E5367D129E2C8F2A1C14E159 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72DAAA3BA48691EE37C14CBFBB158A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F36A5F406777302B190B59D54C37B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA94748C1604C5E7F6A21608EFBDE991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F46385B7746B23E11AB29E45360827 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AC6A793685BA0E582920A0BD79A3B8C /* Pods-AppointmentFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F614914A3652AFB62367F2D1235A2F48 /* Pods-AppointmentFinderTests.modulemap */,
+				89A73432F7AA2F8B48B91A404C34417E /* Pods-AppointmentFinderTests-acknowledgements.markdown */,
+				C79A565153D9788FEBC8C645E7B556F2 /* Pods-AppointmentFinderTests-acknowledgements.plist */,
+				B36C6F13626752CB17ADA9D3F0600B9F /* Pods-AppointmentFinderTests-dummy.m */,
+				8415087ADEE9E2AA57956C6679489713 /* Pods-AppointmentFinderTests-Info.plist */,
+				28DC513082CFAF6A19ED5EA741E532FB /* Pods-AppointmentFinderTests-umbrella.h */,
+				65B195524F08D69BA42232D305778841 /* Pods-AppointmentFinderTests.debug.xcconfig */,
+				B1CAF59C408F3A957BFD0C85D59B184E /* Pods-AppointmentFinderTests.release.xcconfig */,
+			);
+			name = "Pods-AppointmentFinderTests";
+			path = "Target Support Files/Pods-AppointmentFinderTests";
+			sourceTree = "<group>";
+		};
+		294670367DF58303C76FA6728E2CCAC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C09975A8092648816B5AA49A70C9C065 /* SwiftSoup */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		867EB5C83129E1DC07CCF03B9535DCA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67C5E6E55BC655EC4B424AEECCE5E99B /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9DCC4101A4FBD9CD947D0F3B3E3B71DB /* Pods-AppointmentFinder-AppointmentFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08A1F24F37F6ED97645DA7EFE896D00D /* Pods-AppointmentFinder-AppointmentFinderUITests.modulemap */,
+				A21B4DC53A971B495F72EC7ECBC7A883 /* Pods-AppointmentFinder-AppointmentFinderUITests-acknowledgements.markdown */,
+				CE7FB6EC46351855F55D9B3C5D35864E /* Pods-AppointmentFinder-AppointmentFinderUITests-acknowledgements.plist */,
+				414E77F613D6EDC5711B92812F8ACA22 /* Pods-AppointmentFinder-AppointmentFinderUITests-dummy.m */,
+				195290A6CE84EBE38E08AAD67A5420E1 /* Pods-AppointmentFinder-AppointmentFinderUITests-frameworks.sh */,
+				A920980DDDEC965EB553E88754037C0C /* Pods-AppointmentFinder-AppointmentFinderUITests-Info.plist */,
+				668F6A4FCA0541015C1D72D0EAB08F02 /* Pods-AppointmentFinder-AppointmentFinderUITests-umbrella.h */,
+				870B7965D363ACA17D4D835498B6FA4B /* Pods-AppointmentFinder-AppointmentFinderUITests.debug.xcconfig */,
+				7E4D1668C1E29847D1BD96ED73510E84 /* Pods-AppointmentFinder-AppointmentFinderUITests.release.xcconfig */,
+			);
+			name = "Pods-AppointmentFinder-AppointmentFinderUITests";
+			path = "Target Support Files/Pods-AppointmentFinder-AppointmentFinderUITests";
+			sourceTree = "<group>";
+		};
+		BC434F3BB70B0F7344A9087E9A904CB7 /* Pods-AppointmentFinder */ = {
+			isa = PBXGroup;
+			children = (
+				4E13DB96AEBB068683D1C590FB75684F /* Pods-AppointmentFinder.modulemap */,
+				9B2A5E3FBEFC8A6058574BC945FA33FF /* Pods-AppointmentFinder-acknowledgements.markdown */,
+				18847F410958B6C749726BCE98F2C84F /* Pods-AppointmentFinder-acknowledgements.plist */,
+				AB0082C810F169D0253B151D8E3290BC /* Pods-AppointmentFinder-dummy.m */,
+				91E8A2540A127FC5B731F5AC32A04EBB /* Pods-AppointmentFinder-frameworks.sh */,
+				8B4032252B748EE7AC5FF23915B6C54D /* Pods-AppointmentFinder-Info.plist */,
+				8552FDF7882CEE1ACFC50E47B4443FBA /* Pods-AppointmentFinder-umbrella.h */,
+				B960D16F4A7F40FF69180F998534C0CB /* Pods-AppointmentFinder.debug.xcconfig */,
+				452F50E039790064C1D4234604FB91E4 /* Pods-AppointmentFinder.release.xcconfig */,
+			);
+			name = "Pods-AppointmentFinder";
+			path = "Target Support Files/Pods-AppointmentFinder";
+			sourceTree = "<group>";
+		};
+		C09975A8092648816B5AA49A70C9C065 /* SwiftSoup */ = {
+			isa = PBXGroup;
+			children = (
+				73A71B746BE725C7604E65F1BA0F0141 /* ArrayExt.swift */,
+				F1A1515C4DFB41220A9C867FFA019173 /* Attribute.swift */,
+				CC57CA051E66888BB1971981CDCDB499 /* Attributes.swift */,
+				299F010F91C94BF35969338629088DF8 /* BinarySearch.swift */,
+				330C47E5CA6852E27DFFBAC7C1577B01 /* BooleanAttribute.swift */,
+				1DCD5E42C32DD8D0E52BE418816DE1FD /* CharacterExt.swift */,
+				8F272E2E22A9D4BAB1609DC58712B4E8 /* CharacterReader.swift */,
+				0CA5EF99618173663FA054FC3BBD55CD /* Cleaner.swift */,
+				F18490F8BE9C3A83EA5F421D566DAE9E /* Collector.swift */,
+				535E9ACAB91CE3DACBD39193730B83E1 /* CombiningEvaluator.swift */,
+				CB4B45C1731C37FCE8219C8549C762FC /* Comment.swift */,
+				02ABEF92D8AE79C26D0B45A2C8A68BDF /* Connection.swift */,
+				CA0C5E5E3168BCC672840381CBD9C690 /* CssSelector.swift */,
+				2D8AFD1DDA7422E8C3A59A72218ECCE1 /* DataNode.swift */,
+				4257500C2F101EBB103054B6F22B3BE6 /* DataUtil.swift */,
+				B2E088DDE075294576790542967D5092 /* Document.swift */,
+				95CD18C297AE335D0001AFD169E66332 /* DocumentType.swift */,
+				7F01A434C651E53CE886080EEC6A04EB /* Element.swift */,
+				480A6B8C97E1CC9DDB009B942E46AD80 /* Elements.swift */,
+				14C7B54E2207C3075DDA5B442D29D1E2 /* Entities.swift */,
+				B52127C4C703CF5C68D5B2FB53BBB49C /* Evaluator.swift */,
+				BAFFE57DDC1EF61B1280B22295755916 /* Exception.swift */,
+				AD3319234D667DF1C099A8A55EDAB01A /* FormElement.swift */,
+				A7FEFB483E9E0442BE227A1FF99FD16B /* HtmlTreeBuilder.swift */,
+				274F9353BE7C2162D189600ED14FB345 /* HtmlTreeBuilderState.swift */,
+				9558127332033C32E71B015B08C37E7C /* HttpStatusException.swift */,
+				AEDD3A4CB6F290CE231D46A1EF74DC3E /* Mutex.swift */,
+				B1F06C6505DF80E61B377B6A3D446F3D /* Node.swift */,
+				59BF17B11C8ABEB18E44A6D69DA71897 /* NodeTraversor.swift */,
+				A08616EE583E36C2A070E003AB8A6C89 /* NodeVisitor.swift */,
+				C8565CA04E00B65067FBADB4B33F1EAA /* OrderedSet.swift */,
+				87DB14AFAF7CA1951553862D2E7E8FA4 /* ParseError.swift */,
+				541AED72B585461E3257C4438AA118C9 /* ParseErrorList.swift */,
+				F0EBB0478220DDB151A370BD89351BD2 /* Parser.swift */,
+				E5CB366D40AC0B25D6B1771726D12936 /* ParseSettings.swift */,
+				8D2748E53D97C485A071019AC85AB6D5 /* Pattern.swift */,
+				793A4E71D6DBD22256FC45C0EADCB102 /* QueryParser.swift */,
+				782CD6E32754D17A959BF1EB53A99C9E /* SerializationException.swift */,
+				028D3261619347FA17517E2364917871 /* SimpleDictionary.swift */,
+				DF52FF2CD3CEB5086C797A3EB144270D /* StreamReader.swift */,
+				E37B78D191A8416FEECA8644346AE076 /* String.swift */,
+				7F0BB6A0CCC8AE526AAD7B636E9346D1 /* StringBuilder.swift */,
+				52842DFF5B38CD936E090916D163B370 /* StringUtil.swift */,
+				DB7CCB4F1A3257E6EA3C7E4F21E24F31 /* StructuralEvaluator.swift */,
+				FFC5F501F6E481457B62F2C7F48CD19A /* SwiftSoup.swift */,
+				0186D282EF365FC8796F5CDDF3A73027 /* Tag.swift */,
+				9A9CBC8049357B25DC48FEB868B09CC9 /* TextNode.swift */,
+				786656DD5823D845776D10940F4588F1 /* Token.swift */,
+				225560D84D6EDB1822F35B269B043F77 /* Tokeniser.swift */,
+				2DFF8771F98582E35060F4228FC3A904 /* TokeniserState.swift */,
+				9AC610BBDA805620F809203DC7EFD1D6 /* TokenQueue.swift */,
+				7F0F81D500F969A3A3CC3045793A995C /* TreeBuilder.swift */,
+				A325F6783C055E752BDF9FFBFEE51666 /* UnfairLock.swift */,
+				F83A5DBDEE46138B83FFA61005CA4A39 /* UnicodeScalar.swift */,
+				62BD3D2BA3A0236472FDAB2220B79384 /* Validate.swift */,
+				C77BF3CC3BC0A0137A0893AD39309A0A /* Whitelist.swift */,
+				8E4E45FB00B83843071ED873C235F456 /* XmlDeclaration.swift */,
+				CD9D7C45EFA29748426CC8E57AECD54A /* XmlTreeBuilder.swift */,
+				867EB5C83129E1DC07CCF03B9535DCA7 /* Resources */,
+				EFC00355CDD21248D36A08D6D0AB2ADA /* Support Files */,
+			);
+			name = SwiftSoup;
+			path = SwiftSoup;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				294670367DF58303C76FA6728E2CCAC5 /* Pods */,
+				FD9213AA35B9821B5CA19EB1B935E6C7 /* Products */,
+				D3F9D15E1AC123A158B370209DD8049A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3F9D15E1AC123A158B370209DD8049A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC434F3BB70B0F7344A9087E9A904CB7 /* Pods-AppointmentFinder */,
+				9DCC4101A4FBD9CD947D0F3B3E3B71DB /* Pods-AppointmentFinder-AppointmentFinderUITests */,
+				1AC6A793685BA0E582920A0BD79A3B8C /* Pods-AppointmentFinderTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EFC00355CDD21248D36A08D6D0AB2ADA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25E69725DA6C03AF0AA69513FF884260 /* ResourceBundle-SwiftSoup-SwiftSoup-Info.plist */,
+				FD80AD135293FF19F384F002F084B9A7 /* SwiftSoup.modulemap */,
+				BDA93731FD628C99375D8D2DC1CABC77 /* SwiftSoup-dummy.m */,
+				B948A0B4E60AF7E670CD50D3F8F10D3C /* SwiftSoup-Info.plist */,
+				72B795A688A875AFC1DAD360F2F287E6 /* SwiftSoup-prefix.pch */,
+				B68BF090A4702B2F197CA5983995DA89 /* SwiftSoup-umbrella.h */,
+				4D660463EAF613D25753C1258F8FBA5C /* SwiftSoup.debug.xcconfig */,
+				6AB5189104455B1F5A7D0A625F4A3008 /* SwiftSoup.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSoup";
+			sourceTree = "<group>";
+		};
+		FD9213AA35B9821B5CA19EB1B935E6C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF6130F19095E63B93266297868D76D1 /* Pods-AppointmentFinder */,
+				E24A9CE6DD2AC0927B65A1FDA419AC45 /* Pods-AppointmentFinder-AppointmentFinderUITests */,
+				E1D292B54DE011082B477EE9B2EBE44F /* Pods-AppointmentFinderTests */,
+				5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup */,
+				7977795532771BCD15FDC7F92DBBBCB6 /* SwiftSoup-SwiftSoup */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5104803EFB0AA6DD74478ECE62AB396A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E88CBDC2BF8F2D3D44913A0BB5C1776 /* SwiftSoup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA3A1C922B3A953AA42527F002C1689 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB37D38F7F42E22916989D2543D026F /* Pods-AppointmentFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB41C8F491011346C9A7AB2424E70300 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF21A4958A1F2968E76981AFE9CF2CD7 /* Pods-AppointmentFinder-AppointmentFinderUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5B1DD5B02CCAE2C2FFA5460A2D779C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354BE30B27FB9A6BE7E1F9BC990399A0 /* Pods-AppointmentFinderTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17EF7C14490BBBC6D0ED1ADE87EF4C28 /* Pods-AppointmentFinder-AppointmentFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AACE41EA6B443B1B0BB9DF7986321138 /* Build configuration list for PBXNativeTarget "Pods-AppointmentFinder-AppointmentFinderUITests" */;
+			buildPhases = (
+				CB41C8F491011346C9A7AB2424E70300 /* Headers */,
+				76B10015DE9E76FF2B72A450A9F93E84 /* Sources */,
+				7526C313BE2DC217255C36684F3787DE /* Frameworks */,
+				8863F27119626C5ECE0D5B5C27700398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98795C394AB3724290E10AD0780D93B6 /* PBXTargetDependency */,
+			);
+			name = "Pods-AppointmentFinder-AppointmentFinderUITests";
+			productName = Pods_AppointmentFinder_AppointmentFinderUITests;
+			productReference = E24A9CE6DD2AC0927B65A1FDA419AC45 /* Pods-AppointmentFinder-AppointmentFinderUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		2713795054EA26FF73DB81D0E8B480AA /* SwiftSoup-SwiftSoup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8637078A17F13410E534D8DC491B9BB9 /* Build configuration list for PBXNativeTarget "SwiftSoup-SwiftSoup" */;
+			buildPhases = (
+				B003FAC90B964FEB38DE97C42DB16959 /* Sources */,
+				1EC33EC9121DC53B2105FD14BFFFEFF9 /* Frameworks */,
+				35F001CF85A7B570120B1629FF17653D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftSoup-SwiftSoup";
+			productName = SwiftSoup;
+			productReference = 7977795532771BCD15FDC7F92DBBBCB6 /* SwiftSoup-SwiftSoup */;
+			productType = "com.apple.product-type.bundle";
+		};
+		82E15A8D015657F374818E7134C0C8F1 /* Pods-AppointmentFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A6C009F6E14632634735D26285221F9 /* Build configuration list for PBXNativeTarget "Pods-AppointmentFinder" */;
+			buildPhases = (
+				BFA3A1C922B3A953AA42527F002C1689 /* Headers */,
+				C3F9D0686982A6FDFC0AE8B3F92F18CC /* Sources */,
+				6D0C2B3D4314C1EC2D2855FA66D7A9A2 /* Frameworks */,
+				8A93CA300B081BAB93CAE493F0E2E9D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE614BC70AB741D7E5E561A6A979FFA /* PBXTargetDependency */,
+			);
+			name = "Pods-AppointmentFinder";
+			productName = Pods_AppointmentFinder;
+			productReference = AF6130F19095E63B93266297868D76D1 /* Pods-AppointmentFinder */;
+			productType = "com.apple.product-type.framework";
+		};
+		B935B80F0D6B7425C374A3A1B4A4F4E5 /* Pods-AppointmentFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1594A372B475B13CFAF90C95517C245 /* Build configuration list for PBXNativeTarget "Pods-AppointmentFinderTests" */;
+			buildPhases = (
+				E5B1DD5B02CCAE2C2FFA5460A2D779C3 /* Headers */,
+				60D7CC39CBFEF9DBDEB205FAA3A8FDA4 /* Sources */,
+				D72DAAA3BA48691EE37C14CBFBB158A2 /* Frameworks */,
+				82B214165917467191536365509C4A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A2504CF63EA4CBB2E8347F38E4101D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-AppointmentFinderTests";
+			productName = Pods_AppointmentFinderTests;
+			productReference = E1D292B54DE011082B477EE9B2EBE44F /* Pods-AppointmentFinderTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009438E2FEB48182D9BE28E0E410803F /* Build configuration list for PBXNativeTarget "SwiftSoup" */;
+			buildPhases = (
+				5104803EFB0AA6DD74478ECE62AB396A /* Headers */,
+				D7A43B7DE2DA831E411577E76D7E8D2F /* Sources */,
+				EA94748C1604C5E7F6A21608EFBDE991 /* Frameworks */,
+				ACE69899CBE825D68B2C99307AC20A06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8B707BD5654549B2D98C0F00EA11F81 /* PBXTargetDependency */,
+			);
+			name = SwiftSoup;
+			productName = SwiftSoup;
+			productReference = 5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FD9213AA35B9821B5CA19EB1B935E6C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82E15A8D015657F374818E7134C0C8F1 /* Pods-AppointmentFinder */,
+				17EF7C14490BBBC6D0ED1ADE87EF4C28 /* Pods-AppointmentFinder-AppointmentFinderUITests */,
+				B935B80F0D6B7425C374A3A1B4A4F4E5 /* Pods-AppointmentFinderTests */,
+				D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */,
+				2713795054EA26FF73DB81D0E8B480AA /* SwiftSoup-SwiftSoup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35F001CF85A7B570120B1629FF17653D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B6A592D0381AC7DC9E1CD368DC90AD /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B214165917467191536365509C4A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8863F27119626C5ECE0D5B5C27700398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A93CA300B081BAB93CAE493F0E2E9D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE69899CBE825D68B2C99307AC20A06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5ADE0B649BF53670D96359D661EFD5 /* SwiftSoup-SwiftSoup in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60D7CC39CBFEF9DBDEB205FAA3A8FDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BBF459C17C36F75D0C180A50A6DE4D /* Pods-AppointmentFinderTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B10015DE9E76FF2B72A450A9F93E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C52F60E1D79B8FC9002C8F355C763F /* Pods-AppointmentFinder-AppointmentFinderUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B003FAC90B964FEB38DE97C42DB16959 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F9D0686982A6FDFC0AE8B3F92F18CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5C9CC10423050A2B82981756FB99F6 /* Pods-AppointmentFinder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A43B7DE2DA831E411577E76D7E8D2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A3BA9652912CCDE50D46517F3E47CD /* ArrayExt.swift in Sources */,
+				156A5C1D40E32103B7D8D3073E0DEE6D /* Attribute.swift in Sources */,
+				5A78A3B41086AD0AFC57A12E9A54B7E6 /* Attributes.swift in Sources */,
+				C660E4DA75933E2733BEF06E3B09A0C9 /* BinarySearch.swift in Sources */,
+				B59556AFE2EA38205BF08919B1AAD350 /* BooleanAttribute.swift in Sources */,
+				1EBD07B344F4C00693D5C4FE69F8626D /* CharacterExt.swift in Sources */,
+				A4F6B7794D113D69E49F75EF2B094336 /* CharacterReader.swift in Sources */,
+				CD64D9D80428674E76E4B612184FB148 /* Cleaner.swift in Sources */,
+				E4F437019D66767F61D9A402054F3FC4 /* Collector.swift in Sources */,
+				6FF7395D5620233161867B47A850289D /* CombiningEvaluator.swift in Sources */,
+				E1ECA653A787DFA91EC4C1B856909C81 /* Comment.swift in Sources */,
+				F911DC8D32D8081809DE861CDCF8545A /* Connection.swift in Sources */,
+				29269383F072E1DEC9E2825639E79AA1 /* CssSelector.swift in Sources */,
+				49DCB48E5341AAB447D2BE7B9EA66678 /* DataNode.swift in Sources */,
+				A20559697E9AA54245FA0E47116744AD /* DataUtil.swift in Sources */,
+				46812694043186C87EFBFF3C7EA771FE /* Document.swift in Sources */,
+				9130B945402F50A32AED1018A00C5800 /* DocumentType.swift in Sources */,
+				99B03FD19899E40C636D8443F0D4F45F /* Element.swift in Sources */,
+				6968E8FAEE10467201A4CAC774238624 /* Elements.swift in Sources */,
+				EF0A6B2BA28B537890E5921B05316EF5 /* Entities.swift in Sources */,
+				B816482347F8F2D336F778550C88AF7F /* Evaluator.swift in Sources */,
+				2BBDF53DC5469F75FCF14729DBAA6CD1 /* Exception.swift in Sources */,
+				A0BEFB9777A6FEA2955F6C32FAD908EA /* FormElement.swift in Sources */,
+				071EBD610F329CFBABC9EAFABB4C8F69 /* HtmlTreeBuilder.swift in Sources */,
+				B628B05F7721E33235406133AC4C16E7 /* HtmlTreeBuilderState.swift in Sources */,
+				32B9C269AF72D4744FAC59B98FEFCAAB /* HttpStatusException.swift in Sources */,
+				F98B03615C015CA31039F8611AC4786E /* Mutex.swift in Sources */,
+				0D3C5C668244A45BCD98E8BE9A17E862 /* Node.swift in Sources */,
+				179FE5D62F33E9C6B29412E9EC0F87EB /* NodeTraversor.swift in Sources */,
+				315EB177FD995A4678F0CF9081740621 /* NodeVisitor.swift in Sources */,
+				5813E5D4937EF4E699F6949123CE96EC /* OrderedSet.swift in Sources */,
+				6212964EF5E0C7210E3E58FCC37BAE7C /* ParseError.swift in Sources */,
+				8EFB354312A09E2F8FC22E020E3BD709 /* ParseErrorList.swift in Sources */,
+				D92A1AF665187987A85B411D790949AA /* Parser.swift in Sources */,
+				8601B7FCA1B656E9109128AC000D3ACE /* ParseSettings.swift in Sources */,
+				99A3D75920414E3919B202FF673CD343 /* Pattern.swift in Sources */,
+				33DCF4CD0BC4EF2C7CF9D415163383DC /* QueryParser.swift in Sources */,
+				1010680B1092C0010ADD84DFFA0CA4AF /* SerializationException.swift in Sources */,
+				47455C1526428B4FAAE12221A3C9C550 /* SimpleDictionary.swift in Sources */,
+				5C52411C02C57FFA8CCD549630CAB80D /* StreamReader.swift in Sources */,
+				5CCAAB7F83FC7451A168FC013A51DDE2 /* String.swift in Sources */,
+				79C85C520C32F9B61945DF6C05D74769 /* StringBuilder.swift in Sources */,
+				000002FCB2A8B864EC30844FF75CA795 /* StringUtil.swift in Sources */,
+				55F162EAA96FFA143BF089F7DC5AC8C9 /* StructuralEvaluator.swift in Sources */,
+				176FC704EE93071B49173DC6274581CB /* SwiftSoup.swift in Sources */,
+				5BBA772BFCC83433AADCE1F17754A862 /* SwiftSoup-dummy.m in Sources */,
+				9E079A84091893C954D87CC973195A3E /* Tag.swift in Sources */,
+				2E558081336A19D24CF9EF9FAB530693 /* TextNode.swift in Sources */,
+				035E214514B5FEB96818581B72CCB7CB /* Token.swift in Sources */,
+				5F8FC8254A0EF62B89121BC7365E0DFB /* Tokeniser.swift in Sources */,
+				758EAF35600B7220CC1EC79CB1158F93 /* TokeniserState.swift in Sources */,
+				A3675DDFDB2F343334CCDA27FA0A32A1 /* TokenQueue.swift in Sources */,
+				3F9B6A5F058BBA57C42C78B3A220D4B9 /* TreeBuilder.swift in Sources */,
+				B8CBD6596553E0D6D23F44A8AD6FEBAA /* UnfairLock.swift in Sources */,
+				EF6C6B6B4F60D15C843C41FD75B835B7 /* UnicodeScalar.swift in Sources */,
+				5F388DA04D60A26F0A557CA78D3F294B /* Validate.swift in Sources */,
+				A4C6E03ABDC7582013716D64AF6E6619 /* Whitelist.swift in Sources */,
+				DBAC6C78F4705141D9651B92557DF4FF /* XmlDeclaration.swift in Sources */,
+				8A8732C28FE641A6F96EB029CCD3C8A2 /* XmlTreeBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A2504CF63EA4CBB2E8347F38E4101D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AppointmentFinder";
+			target = 82E15A8D015657F374818E7134C0C8F1 /* Pods-AppointmentFinder */;
+			targetProxy = 9BF037EC2620AFEF3FDC269119849160 /* PBXContainerItemProxy */;
+		};
+		98795C394AB3724290E10AD0780D93B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSoup;
+			target = D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */;
+			targetProxy = 6D95CE7322E5F15B66B427EB252440DC /* PBXContainerItemProxy */;
+		};
+		C8B707BD5654549B2D98C0F00EA11F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSoup-SwiftSoup";
+			target = 2713795054EA26FF73DB81D0E8B480AA /* SwiftSoup-SwiftSoup */;
+			targetProxy = 8624490BC154042DCF6C388AA98FA457 /* PBXContainerItemProxy */;
+		};
+		FBE614BC70AB741D7E5E561A6A979FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSoup;
+			target = D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */;
+			targetProxy = 1A15D445656FE6962FD4D5926C687CC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BED8D0CA7F7D0D637795F966AD32204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D660463EAF613D25753C1258F8FBA5C /* SwiftSoup.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		546896A4DBB0174BE0E1C72BD62E7E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB5189104455B1F5A7D0A625F4A3008 /* SwiftSoup.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67706942376E1355C621D476BF144C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4D1668C1E29847D1BD96ED73510E84 /* Pods-AppointmentFinder-AppointmentFinderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppointmentFinder-AppointmentFinderUITests/Pods-AppointmentFinder-AppointmentFinderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppointmentFinder-AppointmentFinderUITests/Pods-AppointmentFinder-AppointmentFinderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A624BDC8C3F4143FD39BEB89387FA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB5189104455B1F5A7D0A625F4A3008 /* SwiftSoup.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftSoup";
+				IBSC_MODULE = SwiftSoup;
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/ResourceBundle-SwiftSoup-SwiftSoup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6B374B5670F736BF9BD192B16B4FE4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452F50E039790064C1D4234604FB91E4 /* Pods-AppointmentFinder.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppointmentFinder/Pods-AppointmentFinder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppointmentFinder/Pods-AppointmentFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		700E96A4F859D54F8C0D24D605A7D601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870B7965D363ACA17D4D835498B6FA4B /* Pods-AppointmentFinder-AppointmentFinderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppointmentFinder-AppointmentFinderUITests/Pods-AppointmentFinder-AppointmentFinderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppointmentFinder-AppointmentFinderUITests/Pods-AppointmentFinder-AppointmentFinderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F8DF7F135974F52A0B6A80D001B6689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B960D16F4A7F40FF69180F998534C0CB /* Pods-AppointmentFinder.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppointmentFinder/Pods-AppointmentFinder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppointmentFinder/Pods-AppointmentFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8C0BCDEA72177BD2A052BAE2660C75FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CAF59C408F3A957BFD0C85D59B184E /* Pods-AppointmentFinderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppointmentFinderTests/Pods-AppointmentFinderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppointmentFinderTests/Pods-AppointmentFinderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB1CF8EBC2955215911C790F43CAEE14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D660463EAF613D25753C1258F8FBA5C /* SwiftSoup.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftSoup";
+				IBSC_MODULE = SwiftSoup;
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/ResourceBundle-SwiftSoup-SwiftSoup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C195E975009012C8F3A1C23E1B0BFE8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B195524F08D69BA42232D305778841 /* Pods-AppointmentFinderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppointmentFinderTests/Pods-AppointmentFinderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppointmentFinderTests/Pods-AppointmentFinderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		009438E2FEB48182D9BE28E0E410803F /* Build configuration list for PBXNativeTarget "SwiftSoup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BED8D0CA7F7D0D637795F966AD32204 /* Debug */,
+				546896A4DBB0174BE0E1C72BD62E7E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A6C009F6E14632634735D26285221F9 /* Build configuration list for PBXNativeTarget "Pods-AppointmentFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8DF7F135974F52A0B6A80D001B6689 /* Debug */,
+				6B374B5670F736BF9BD192B16B4FE4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8637078A17F13410E534D8DC491B9BB9 /* Build configuration list for PBXNativeTarget "SwiftSoup-SwiftSoup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1CF8EBC2955215911C790F43CAEE14 /* Debug */,
+				6A624BDC8C3F4143FD39BEB89387FA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1594A372B475B13CFAF90C95517C245 /* Build configuration list for PBXNativeTarget "Pods-AppointmentFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C195E975009012C8F3A1C23E1B0BFE8E /* Debug */,
+				8C0BCDEA72177BD2A052BAE2660C75FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AACE41EA6B443B1B0BB9DF7986321138 /* Build configuration list for PBXNativeTarget "Pods-AppointmentFinder-AppointmentFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700E96A4F859D54F8C0D24D605A7D601 /* Debug */,
+				67706942376E1355C621D476BF144C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
